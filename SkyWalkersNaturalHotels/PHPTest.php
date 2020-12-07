@@ -1,18 +1,12 @@
 <?php
-
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $email = $_POST['email'];
 $comment = $_POST['comment'];
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db = "skywalkers";
+$conn=mysqli_connect("localhost","id15443406_skywakers","?H9K?ojB0ssx!)HI","id15443406_skywalkers");
 
-$conn = new mysqli($servername, $username, $password, $db);
-
-if ($conn->connect_error){
+if($conn->connect_error){
     die("Connection failed: ".$conn->connect_error);
 }
 
